@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kindly — Student Mental Health Resource Finder</title>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="crisis-bar">
+  In immediate danger or thinking about harming yourself?
+<a href="tel:988">Call / Text 988</a>
+<a href="https://988lifeline.org/chat/" target="_blank">Chat Online</a>
+</div>
+<nav class="nav">
+<div class="nav-in">
+<a class="logo-a" href="#" onclick="showPage('home'); return false;">
+<img class="logo-img" src="Kindly.png" alt="Kindly" onerror="this.style.display='none'">
+</a>
+<div class="nav-links">
+<button class="nl active" onclick="showPage('home')">Home</button>
+<button class="nl" onclick="showPage('community')">Community <span class="nbadge" id="pcnt">4</span></button>
+<button class="nl" onclick="showPage('quiz')">Self-Check</button>
+<button class="nl" onclick="showPage('resources')">Resources</button>
+<button class="nl" onclick="showPage('tools')">Self-Help</button>
+<button class="nl" onclick="showPage('flowchart')">Emergency?</button>
+</div>
+<div class="nav-r">
+<button class="btn-cp" onclick="showPage('counselor')">Counselor Portal</button>
+</div>
+</div>
+</nav>
+<div id="page-home" class="page active">
+<div class="hhero">
+<h1>You don't have to<br><em>figure it out alone.</em></h1>
+<p>Kindly connects students with the right mental health help at the right time — confidentially, instantly, and for free.</p>
+<div class="hbtns">
+<button class="bh1" onclick="showPage('quiz')">Take the Self-Check Survey</button>
+<button class="bh2" onclick="showPage('community')">Join the Community</button>
+</div>
+</div>
+<div class="hsec">
+<div class="eyebrow">What we offer</div>
+<h2 class="sth">Everything you need, in one safe place</h2>
+<p class="stp">No sign-ups. No judgment. No data collection. Just support.</p>
+<div class="fg3">
+<div class="fc" onclick="showPage('community')">
+<div class="fc-icon" style="background:var(--teal-l)">Anonymous Community</div>
+<p>Post questions, share experiences, and get peer support — no account required. Built for student mental health.</p>
+</div>
+<div class="fc" onclick="showPage('quiz')">
+<div class="fc-icon" style="background:var(--pink-l)">Mental Health Self-Check</div>
+<p>Answer a series of questions and receive personalized therapy recommendations and coping strategies tailored to what you are going through.</p>
+</div>
+<div class="fc" onclick="showPage('resources')">
+<div class="fc-icon" style="background:#fff7ed">Resource Directory</div>
+<p>Hotlines, apps, local therapists, and school counselors — all verified and searchable in one place.</p>
+</div>
+<div class="fc" onclick="showPage('tools')">
+<div class="fc-icon" style="background:var(--ok-l)">Self-Help Tools</div>
+<p>Breathing exercises, journaling prompts, and grounding techniques available right now, whenever you need them.</p>
+</div>
+<div class="fc" onclick="showPage('flowchart')">
+<div class="fc-icon" style="background:var(--danger-l)">Is This an Emergency?</div>
+<p>Not sure how serious things are? Follow our step-by-step flowchart to understand what level of help you need.</p>
+</div>
+<div class="fc" onclick="showPage('counselor')">
+<div class="fc-icon" style="background:#f5f0ff">Counselor Portal</div>
+<p>Verified school counselors can respond to student questions directly, reducing unnecessary office visits.</p>
+</div>
+</div>
+</div>
+<div class="stats-section">
+<div class="stats-inner">
+<div class="eyebrow">Story of Numbers</div>
+<h2 class="sth">The mental health crisis is real</h2>
+<p class="stp">These are not abstract figures — they are students in classrooms right now.</p>
+<div class="stats-grid">
+<div class="stat-card"><span class="stat-num">37<span class="stat-unit">%</span></span><span class="stat-label">College students with moderate to severe depression</span></div>
+<div class="stat-card"><span class="stat-num">32<span class="stat-unit">%</span></span><span class="stat-label">Students experience moderate to severe anxiety</span></div>
+<div class="stat-card"><span class="stat-num">40<span class="stat-unit">%</span></span><span class="stat-label">High school students feel persistently sad or hopeless</span></div>
+<div class="stat-card"><span class="stat-num">11<span class="stat-unit">%</span></span><span class="stat-label">Students had suicidal thoughts in the past year</span></div>
+<div class="stat-card"><span class="stat-num">68<span class="stat-unit">%</span></span><span class="stat-label">Mental health impacted academic performance</span></div>
+<div class="stat-card stat-card-accent"><span class="stat-num"><span class="stat-unit stat-dollar">$</span>143</span><span class="stat-label">Average cost per counseling session in the USA</span></div>
+</div>
+</div>
+</div>
+<div class="stband">
+<div class="stband-label">School Counselors Are Overwhelmed</div>
+<div class="stin">
+  <div>
+    <span class="sn">376<span class="sa">:1</span></span>
+    <span class="sl">National student-to-counselor ratio</span>
+  </div>
+  <div>
+    <span class="sn">53<span class="sa">%</span></span>
+    <span class="sl">Public schools report more students seeking mental health help</span>
+  </div>
+  <div>
+    <span class="sn">581–702<span class="sa">:1</span></span>         
+    <span class="sl">Elementary & middle school ratios</span>
+  </div>
+  <div>
+    <span class="sn">250<span class="sa">:1</span></span>             
+    <span class="sl">Recommended ratio — only 3 states meet this standard</span>
+  </div>
+</div>
+<div class="stband-note">Only Hawaii, New Hampshire, and Vermont meet the recommended 250:1 counselor ratio.</div>
+</div>
+<div class="hsec" style="margin-top:0;padding-top:52px">
+<div class="eyebrow">Privacy first</div>
+<h2 class="sth">100% Anonymous by design</h2>
+<p class="stp">No logins. No data stored. No tracking. Your journey is yours alone.</p>
+<div class="fg3">
+<div class="fc" style="border-color:var(--teal)">
+<div class="fc-icon" style="background:var(--teal-l)">A</div>
+<h3>Anonymous Posting</h3>
+<p>Posts use randomly generated handles like "TealMoon42". No email or account — ever.</p>
+</div>
+<div class="fc">
+<div class="fc-icon" style="background:var(--pink-l)">B</div>
+<h3>Bot Protection</h3>
+<p>CAPTCHA keeps the community safe from spam while keeping real students fully anonymous.</p>
+</div>
+<div class="fc">
+<div class="fc-icon" style="background:var(--ok-l)">V</div>
+<h3>Verified Counselors</h3>
+<p>Counselors complete a verification process so students know exactly who is a licensed professional.</p>
+</div>
+</div>
+</div>
+<div class="testimonial-section">
+<div class="testimonial-inner">
+<img src="homepage.jpg" alt="A student using Kindly" class="testimonial-img">
+<div class="testimonial-content">
+<div class="testimonial-label">User Testimonial</div>
+<div class="testimonial-quote">
+<div class="testimonial-quote">
+  John is able to anonymously browse Kindly to find resources and support: saving him time, money, and the anxiety of asking for help out loud.
+</div>
+</div>
+<div class="testimonial-name">John Doe</div>
+<div class="testimonial-role">High School Junior &mdash; Using Kindly since 2024</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page-community" class="page">
+<div class="cl">
+<div>
+<div class="post-trigger" onclick="openModal()">
+<div class="anon-av">A</div>
+<div class="post-placeholder">Share what you are going through — anonymously...</div>
+<button class="bs" style="width:auto;padding:10px 20px;margin:0">+ Post</button>
+</div>
+<div class="filter-row">
+<span class="filter-label">Filter:</span>
+<button class="fp active" onclick="filterPosts('all',this)">All</button>
+<button class="fp" onclick="filterPosts('anxiety',this)">Anxiety</button>
+<button class="fp" onclick="filterPosts('depression',this)">Depression</button>
+<button class="fp" onclick="filterPosts('stress',this)">Stress</button>
+<button class="fp" onclick="filterPosts('relationships',this)">Relationships</button>
+<button class="fp" onclick="filterPosts('academic',this)">Academic</button>
+<button class="fp" onclick="filterPosts('crisis',this)">Crisis</button>
+</div>
+<div id="posts"></div>
+</div>
+<div class="sc">
+<div class="wgt cw">
+<div class="wt">In crisis right now?</div>
+<a href="tel:988" class="b988">Call or Text 988</a>
+<p class="cn2">Free &amp; confidential, 24/7<br>Suicide &amp; Crisis Lifeline</p>
+</div>
+<div class="wgt">
+<div class="wt">Quick Hotlines</div>
+<ul class="hl">
+<li class="hi"><div class="hi-dot"></div><div><div style="font-size:13px;font-weight:700">988 Suicide Lifeline</div><a href="tel:988">Call or Text 988</a></div></li>
+<li class="hi"><div class="hi-dot"></div><div><div style="font-size:13px;font-weight:700">Crisis Text Line</div><a href="sms:741741?body=HOME">Text HOME to 741741</a></div></li>
+<li class="hi"><div class="hi-dot"></div><div><div style="font-size:13px;font-weight:700">Trevor Project</div><a href="tel:18664887386">1-866-488-7386</a></div></li>
+<li class="hi"><div class="hi-dot"></div><div><div style="font-size:13px;font-weight:700">NAMI Helpline</div><a href="tel:18009506264">1-800-950-6264</a></div></li>
+</ul>
+</div>
+<div class="wgt">
+<div class="wt">Community Rules</div>
+<p style="font-size:13px;color:var(--muted);line-height:1.8">
+          Be kind and supportive<br>
+          No sharing personal information<br>
+          No giving medical advice<br>
+          In crisis? Use the panel above<br>
+          Counselors are verified
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="page-quiz" class="page">
+<div class="qw">
+<div class="qhd">
+<div class="qpl">Confidential &middot; Anonymous &middot; No data saved</div>
+<h1>Mental Health Self-Check</h1>
+<p>This brief survey helps you understand your current mental health and connects you with the right resources. There are no right or wrong answers — answer as honestly as you can.</p>
+</div>
+<div class="prg">
+<div class="prm">
+<span id="qlbl">Question 1 of 8</span>
+<span id="qpct">13%</span>
+</div>
+<div class="prt"><div class="prf" id="prf" style="width:13%"></div></div>
+</div>
+<!-- Q1 -->
+<div class="qc active" id="q1">
+<div class="qnum">Question 1 of 8</div>
+<h2>Over the past two weeks, how often have you felt down, depressed, or hopeless?</h2>
+<p class="qnote">Think about how often this has been the case, not just today.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 0)"><div class="qo-radio"></div>Not at all</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Several days</button>
+<button class="qo" onclick="selectAnswer(this, 2)"><div class="qo-radio"></div>More than half the days</button>
+<button class="qo" onclick="selectAnswer(this, 3)"><div class="qo-radio"></div>Nearly every day</button>
+</div>
+<div class="qnv">
+<div></div>
+<button class="bnx" onclick="nextQuestion(1)">Next &rarr;</button>
+</div>
+</div>
+<div class="qc" id="q2">
+<div class="qnum">Question 2 of 8</div>
+<h2>Over the past two weeks, how often have you had little interest or pleasure in doing things you used to enjoy?</h2>
+<p class="qnote">This might include hobbies, spending time with friends, or activities you once looked forward to.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 0)"><div class="qo-radio"></div>Not at all</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Several days</button>
+<button class="qo" onclick="selectAnswer(this, 2)"><div class="qo-radio"></div>More than half the days</button>
+<button class="qo" onclick="selectAnswer(this, 3)"><div class="qo-radio"></div>Nearly every day</button>
+</div>
+<div class="qnv">
+<button class="bbk" onclick="prevQuestion(2)">&larr; Back</button>
+<button class="bnx" onclick="nextQuestion(2)">Next &rarr;</button>
+</div>
+</div>
+<div class="qc" id="q3">
+<div class="qnum">Question 3 of 8</div>
+<h2>Over the past two weeks, how often have you felt nervous, anxious, or on edge?</h2>
+<p class="qnote">This includes general worry, unease, or a sense that something bad might happen.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 0)"><div class="qo-radio"></div>Not at all</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Several days</button>
+<button class="qo" onclick="selectAnswer(this, 2)"><div class="qo-radio"></div>More than half the days</button>
+<button class="qo" onclick="selectAnswer(this, 3)"><div class="qo-radio"></div>Nearly every day</button>
+</div>
+<div class="qnv">
+<button class="bbk" onclick="prevQuestion(3)">&larr; Back</button>
+<button class="bnx" onclick="nextQuestion(3)">Next &rarr;</button>
+</div>
+</div>
+<div class="qc" id="q4">
+<div class="qnum">Question 4 of 8</div>
+<h2>Over the past two weeks, how often have you been unable to stop or control worrying?</h2>
+<p class="qnote">For example, worrying about school, the future, relationships, or things that might go wrong.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 0)"><div class="qo-radio"></div>Not at all</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Several days</button>
+<button class="qo" onclick="selectAnswer(this, 2)"><div class="qo-radio"></div>More than half the days</button>
+<button class="qo" onclick="selectAnswer(this, 3)"><div class="qo-radio"></div>Nearly every day</button>
+</div>
+<div class="qnv">
+<button class="bbk" onclick="prevQuestion(4)">&larr; Back</button>
+<button class="bnx" onclick="nextQuestion(4)">Next &rarr;</button>
+</div>
+</div>
+<div class="qc" id="q5">
+<div class="qnum">Question 5 of 8</div>
+<h2>How has your sleep been over the past two weeks?</h2>
+<p class="qnote">Changes in sleep are often an early sign of mental health challenges.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 0)"><div class="qo-radio"></div>Normal — no major changes</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Some difficulty falling or staying asleep</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Sleeping much more than usual</button>
+<button class="qo" onclick="selectAnswer(this, 2)"><div class="qo-radio"></div>Very disrupted — both too little and too much at different times</button>
+</div>
+<div class="qnv">
+<button class="bbk" onclick="prevQuestion(5)">&larr; Back</button>
+<button class="bnx" onclick="nextQuestion(5)">Next &rarr;</button>
+</div>
+</div>
+<div class="qc" id="q6">
+<div class="qnum">Question 6 of 8</div>
+<h2>How would you describe your ability to concentrate on schoolwork or daily tasks recently?</h2>
+<p class="qnote">Consider whether you have found it harder than usual to focus or follow through on things.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 0)"><div class="qo-radio"></div>Normal — no change in concentration</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Slightly reduced — I can still get things done</button>
+<button class="qo" onclick="selectAnswer(this, 2)"><div class="qo-radio"></div>Noticeably reduced — I am struggling to complete tasks</button>
+<button class="qo" onclick="selectAnswer(this, 3)"><div class="qo-radio"></div>Very difficult — I can barely concentrate at all</button>
+</div>
+<div class="qnv">
+<button class="bbk" onclick="prevQuestion(6)">&larr; Back</button>
+<button class="bnx" onclick="nextQuestion(6)">Next &rarr;</button>
+</div>
+</div>
+<div class="qc" id="q7">
+<div class="qnum">Question 7 of 8</div>
+<h2>How often have you withdrawn from social situations or avoided people you care about?</h2>
+<p class="qnote">This includes canceling plans, not responding to messages, or isolating yourself.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 0)"><div class="qo-radio"></div>Rarely or never — my social life is normal</button>
+<button class="qo" onclick="selectAnswer(this, 1)"><div class="qo-radio"></div>Sometimes — I have pulled back a little</button>
+<button class="qo" onclick="selectAnswer(this, 2)"><div class="qo-radio"></div>Often — I have been avoiding people regularly</button>
+<button class="qo" onclick="selectAnswer(this, 3)"><div class="qo-radio"></div>Almost always — I have largely withdrawn from others</button>
+</div>
+<div class="qnv">
+<button class="bbk" onclick="prevQuestion(7)">&larr; Back</button>
+<button class="bnx" onclick="nextQuestion(7)">Next &rarr;</button>
+</div>
+</div>
+<div class="qc" id="q8">
+<div class="qnum">Question 8 of 8</div>
+<h2>Have you had any thoughts of harming yourself or that you would be better off not being here?</h2>
+<p class="qnote">This is a safe space. Your answer helps us point you to the most appropriate support. There is no wrong answer.</p>
+<div class="qos">
+<button class="qo" onclick="selectAnswer(this, 'none')"><div class="qo-radio"></div>No — nothing like that</button>
+<button class="qo" onclick="selectAnswer(this, 'passive')"><div class="qo-radio"></div>Occasional passive thoughts (like wishing I wasn't here), but no plans</button>
+<button class="qo" onclick="selectAnswer(this, 'active')"><div class="qo-radio"></div>Yes — I have had more serious thoughts or have thought about a plan</button>
+</div>
+<div class="qnv">
+<button class="bbk" onclick="prevQuestion(8)">&larr; Back</button>
+<button class="bnx" onclick="showResults()">See My Results &rarr;</button>
+</div>
+</div>
+<div class="qc" id="qr">
+<div class="results-card">
+<div class="results-header">
+<div class="results-level-badge badge-mod" id="res-badge">Moderate</div>
+<h2 id="res-title">Talking to someone could make a real difference</h2>
+<p id="res-desc">Based on your responses, here is what we recommend.</p>
+</div>
+<div class="svr">
+<span>Recommended support level</span>
+<span id="svtxt" style="font-weight:700">Moderate</span>
+</div>
+<div class="svb"><div class="svf sv2" id="svfill" style="width:55%"></div></div>
+<p style="font-size:13px;color:var(--muted);margin-bottom:28px">This is not a clinical diagnosis. It is a starting point to help you find the right support.</p>
+<div class="res-section">
+<div class="res-section-title">Therapy Recommendations</div>
+<div id="therapy-list"></div>
+</div>
+<div class="res-section">
+<div class="res-section-title">Where to Find a Therapist</div>
+<div id="finder-list"></div>
+</div>
+<div class="res-section">
+<div class="res-section-title">Coping Strategies for Right Now</div>
+<div id="coping-list"></div>
+</div>
+<div class="disc">
+<strong>Important:</strong> Kindly is not a substitute for professional mental health care. If you are in crisis, please call or text <strong>988</strong> immediately — it is free and available 24/7.
+</div>
+<button class="brt" onclick="retakeQuiz()">Retake Survey</button>
+</div>
+</div>
+</div>
+</div><!-- /page-quiz -->
+<!-- ═══════════════════════════ RESOURCES ═══════════════════════════ -->
+<div id="page-resources" class="page">
+<div class="rw">
+<div class="rhr">
+<div>
+<h1>Resource Directory</h1>
+<p>Verified hotlines, apps, local services, and school resources — all in one searchable place.</p>
+</div>
+<div class="rss">
+<svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+<input type="text" placeholder="Search resources..." oninput="searchResources(this.value)">
+</div>
+</div>
+<div class="rtbs">
+<button class="rtb active" onclick="showResourceTab('hotlines',this)">Hotlines</button>
+<button class="rtb" onclick="showResourceTab('apps',this)">Apps</button>
+<button class="rtb" onclick="showResourceTab('therapy',this)">Find a Therapist</button>
+<button class="rtb" onclick="showResourceTab('school',this)">School Resources</button>
+<button class="rtb" onclick="showResourceTab('lgbtq',this)">LGBTQ+</button>
+</div>
+<div class="rpn active" id="rpn-hotlines"><div class="rcg" id="rg-hotlines"></div></div>
+<div class="rpn" id="rpn-apps"><div class="rcg" id="rg-apps"></div></div>
+<div class="rpn" id="rpn-therapy"><div class="rcg" id="rg-therapy"></div></div>
+<div class="rpn" id="rpn-school"><div class="rcg" id="rg-school"></div></div>
+<div class="rpn" id="rpn-lgbtq"><div class="rcg" id="rg-lgbtq"></div></div>
+</div>
+</div>
+<div id="page-tools" class="page">
+<div class="tw">
+<div class="eyebrow" style="text-align:left">Free to use, no sign-up needed</div>
+<h2 class="sth" style="text-align:left">Self-Help Tools</h2>
+<p class="stp" style="text-align:left">Simple, evidence-based techniques you can use right now.</p>
+<div class="tg2">
+<div class="tcd">
+<div class="tch">
+<div class="tci">BB</div>
+<div>
+<div class="tct">Box Breathing</div>
+<div class="tcs">Calming technique &middot; 3 min</div>
+</div>
+</div>
+<div class="tcb">
+<p>Activates the body's relaxation response. Used by therapists, athletes, and the military to reduce acute stress.</p>
+<button class="btl" onclick="toggleTool('bt1')">Start Breathing Exercise</button>
+<div class="btt" id="bt1">
+<div class="br2" id="bring">Breathe</div>
+<div class="bph" id="bph">Ready?</div>
+<div class="bct" id="bct">&mdash;</div>
+<button class="bbs" id="bbs" onclick="startBreath()">Begin</button>
+</div>
+</div>
+</div>
+<div class="tcd">
+<div class="tch">
+<div class="tci">JP</div>
+<div>
+<div class="tct">Journaling Prompts</div>
+<div class="tcs">Reflective writing &middot; 5-10 min</div>
+</div>
+</div>
+<div class="tcb">
+<p>Writing about your feelings can reduce anxiety and help you process difficult emotions. Nothing is saved or shared.</p>
+<button class="btl" onclick="toggleTool('jt1'); newPrompt()">Open Journal</button>
+<div class="jt" id="jt1">
+<div class="jp" id="jprompt">Loading prompt...</div>
+<textarea class="ja" placeholder="Write freely — nothing is saved or shared..."></textarea>
+<button class="bnp" onclick="newPrompt()">New Prompt</button>
+</div>
+</div>
+</div>
+<div class="tcd">
+<div class="tch">
+<div class="tci">GR</div>
+<div>
+<div class="tct">5-4-3-2-1 Grounding</div>
+<div class="tcs">Anxiety relief &middot; 2 min</div>
+</div>
+</div>
+<div class="tcb">
+<p>Uses your senses to anchor you in the present moment and reduce overwhelming feelings of anxiety or panic.</p>
+<button class="btl" onclick="toggleTool('gt1')">Start Grounding</button>
+<div class="gt" id="gt1">
+<div class="gs"><div class="gn">5</div>Name 5 things you can <strong>SEE</strong></div>
+<div class="gs"><div class="gn">4</div>Name 4 things you can <strong>TOUCH</strong></div>
+<div class="gs"><div class="gn">3</div>Name 3 things you can <strong>HEAR</strong></div>
+<div class="gs"><div class="gn">2</div>Name 2 things you can <strong>SMELL</strong></div>
+<div class="gs"><div class="gn">1</div>Name 1 thing you can <strong>TASTE</strong></div>
+</div>
+</div>
+</div>
+<div class="tcd">
+<div class="tch">
+<div class="tci">MC</div>
+<div>
+<div class="tct">Mood Check-In</div>
+<div class="tcs">Daily awareness &middot; 1 min</div>
+</div>
+</div>
+<div class="tcb">
+<p>Tracking your mood builds self-awareness and helps you notice patterns that affect your wellbeing over time.</p>
+<button class="btl" onclick="toggleTool('mt1')">Check My Mood</button>
+<div class="gt" id="mt1" style="padding-top:14px">
+<p style="font-size:15px;font-weight:600;color:var(--text);margin-bottom:12px">Right now I feel...</p>
+<div class="mood-grid">
+<button class="mood-btn" onclick="selectMood(this,'Happy')">Happy</button>
+<button class="mood-btn" onclick="selectMood(this,'Calm')">Calm</button>
+<button class="mood-btn" onclick="selectMood(this,'Anxious')">Anxious</button>
+<button class="mood-btn" onclick="selectMood(this,'Sad')">Sad</button>
+<button class="mood-btn" onclick="selectMood(this,'Angry')">Angry</button>
+<button class="mood-btn" onclick="selectMood(this,'Numb')">Numb</button>
+</div>
+<div id="mmsg" style="font-size:14px;color:var(--muted);text-align:center;min-height:40px;line-height:1.6;padding:0 10px"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page-flowchart" class="page">
+<div class="flw">
+<div class="flwh">
+<h1>Is This an Emergency?</h1>
+<p>Answer a few quick questions to understand how serious your situation might be and what kind of help is right for you.</p>
+</div>
+<div class="fcr" id="fcr"></div>
+<div class="fn active" id="fn1">
+<span class="fni">?</span>
+<h2>Are you safe right now?</h2>
+<p>Are you currently in a physically safe place, with no immediate risk of harm to yourself or others?</p>
+<div class="fbs">
+<button class="fby" onclick="goFlow('fn2','Yes, I am safe')">Yes, I am safe</button>
+<button class="fbn" style="border-color:var(--danger);color:var(--danger)" onclick="goFlow('fn-em','I am not safe')">No, I am not safe</button>
+</div>
+</div>
+<div class="fn" id="fn2">
+<span class="fni">?</span>
+<h2>Are you having thoughts of hurting yourself or suicide?</h2>
+<p>Even passive thoughts (like "I wish I wasn't here") count. There is no wrong answer.</p>
+<div class="fbs">
+<button class="fby" style="background:var(--danger)" onclick="goFlow('fn-cr','Yes, having these thoughts')">Yes, I am</button>
+<button class="fbn" onclick="goFlow('fn3','No thoughts of self-harm')">No, I am not</button>
+</div>
+</div>
+<div class="fn" id="fn3">
+<span class="fni">?</span>
+<h2>Is this significantly disrupting your daily life?</h2>
+<p>Think about school, sleep, eating, friendships, or your ability to function day-to-day.</p>
+<div class="fbs">
+<button class="fby" onclick="goFlow('fn-mo','Yes, significantly disrupting')">Yes, it is</button>
+<button class="fbn" onclick="goFlow('fn4','Not severely disrupting life')">Not significantly</button>
+</div>
+</div>
+<div class="fn" id="fn4">
+<span class="fni">?</span>
+<h2>Has this been going on for more than two weeks?</h2>
+<p>Occasional hard days are normal. Consistent struggles lasting weeks are worth addressing with professional support.</p>
+<div class="fbs">
+<button class="fby" onclick="goFlow('fn-mo','Persisting more than 2 weeks')">Yes, over two weeks</button>
+<button class="fbn" onclick="goFlow('fn-ok','Under 2 weeks')">No, more recent</button>
+</div>
+</div>
+<div class="fn em" id="fn-em">
+<span class="fni">!</span>
+<h2>Please reach out for help right now</h2>
+<p>You deserve immediate support. Please contact a crisis service — free, confidential, and available 24/7.</p>
+<div class="fbs">
+<a href="tel:988" class="fbd">Call 988 Now</a>
+<a href="sms:741741?body=HELLO" class="fbd" style="background:#6d28d9">Text 741741</a>
+</div>
+<button class="brs" onclick="resetFlow()">Start over</button>
+</div>
+<div class="fn em" id="fn-cr">
+<span class="fni">!</span>
+<h2>You are not alone &mdash; and help is here</h2>
+<p>Having thoughts of self-harm is a signal to get support now. Please reach out to a crisis line — they will not judge you, and they are there to listen.</p>
+<div class="fbs">
+<a href="tel:988" class="fbd">Call or Text 988</a>
+<a href="sms:741741?body=HOME" class="fbd" style="background:#6d28d9">Text HOME to 741741</a>
+</div>
+<p style="margin-top:16px;font-size:13px;color:var(--muted)">Also consider talking to a school counselor or trusted adult today.</p>
+<button class="brs" onclick="resetFlow()">Start over</button>
+</div>
+<div class="fn mo" id="fn-mo">
+<span class="fni">&#8593;</span>
+<h2>You would benefit from professional support</h2>
+<p>What you are going through is real and deserves real help. A therapist or counselor can make a significant difference. You do not need to be in crisis to reach out.</p>
+<div class="fbs">
+<button class="fby" onclick="showPage('resources')">Find Resources</button>
+<button class="fbn" onclick="showPage('quiz')">Take the Self-Check</button>
+</div>
+<button class="brs" onclick="resetFlow()">Start over</button>
+</div>
+<div class="fn ok" id="fn-ok">
+<span class="fni">+</span>
+<h2>Self-care and monitoring is a great start</h2>
+<p>It sounds like things are manageable right now. Self-help tools, staying connected, and checking in with yourself regularly can really help. If things change, support is always here.</p>
+<div class="fbs">
+<button class="fby" onclick="showPage('tools')">Try Self-Help Tools</button>
+<button class="fbn" onclick="showPage('community')">Talk to the Community</button>
+</div>
+<button class="brs" onclick="resetFlow()">Start over</button>
+</div>
+</div>
+</div>
+<div id="page-counselor" class="page">
+<div class="cow">
+<div class="coh">
+<h1>Counselor Portal</h1>
+<p>Verified school counselors can respond to student questions, reducing unnecessary office visits and reaching more students who need support.</p>
+</div>
+<div class="cog">
+<div class="cocd">
+<h2>Apply for Verification</h2>
+<p class="cosb">Submit your credentials for review. Verified counselors receive a badge on all their community responses.</p>
+<div id="cfw">
+<div class="fg4"><label class="fl">Full Name</label><input class="fi3" type="text" placeholder="Dr. Jane Smith"></div>
+<div class="fg4"><label class="fl">School / Institution</label><input class="fi3" type="text" placeholder="Lincoln High School"></div>
+<div class="fg4"><label class="fl">Professional Email</label><input class="fi3" type="email" placeholder="j.smith@school.edu"></div>
+<div class="fg4">
+<label class="fl">License / Credential Type</label>
+<select class="fsl">
+<option>Licensed School Counselor</option>
+<option>Licensed Clinical Social Worker (LCSW)</option>
+<option>Licensed Professional Counselor (LPC)</option>
+<option>School Psychologist</option>
+<option>Licensed Marriage &amp; Family Therapist (LMFT)</option>
+<option>Other</option>
+</select>
+</div>
+<div class="fg4"><label class="fl">License Number</label><input class="fi3" type="text" placeholder="SC-12345"></div>
+<div class="fg4"><label class="fl">Brief Bio (shown to students)</label><textarea class="fta2" placeholder="I'm a school counselor specializing in adolescent anxiety and stress management..."></textarea></div>
+<button class="bsp" onclick="submitCounselor()">Submit for Verification &rarr;</button>
+</div>
+<div class="cosc" id="cosc">
+<div style="font-size:48px;font-weight:800;color:var(--ok);font-family:'Borel',cursive;margin-bottom:14px">OK</div>
+<h3 style="font-size:22px;font-weight:700;margin-bottom:8px">Application Received</h3>
+<p style="font-size:15px;color:var(--muted);line-height:1.7">We will review your credentials within 2 business days and send a confirmation to your email.</p>
+</div>
+</div>
+<div class="cocd">
+<h2>Verified Counselors</h2>
+<p class="cosb">These professionals are actively responding to student questions on Kindly.</p>
+<div class="coi"><div class="coav">MC</div><div class="coin"><h4>Dr. Maria Chen</h4><p>Westview High &middot; Anxiety &amp; Depression</p></div><div class="cobg">Verified</div></div>
+<div class="coi"><div class="coav">JO</div><div class="coin"><h4>Mr. James Okafor</h4><p>Lincoln Academy &middot; Stress &amp; Academic Pressure</p></div><div class="cobg">Verified</div></div>
+<div class="coi"><div class="coav">PS</div><div class="coin"><h4>Ms. Priya Sharma</h4><p>Roosevelt MS &middot; Grief &amp; Relationships</p></div><div class="cobg">Verified</div></div>
+<div class="coi"><div class="coav">TR</div><div class="coin"><h4>Dr. Tom Reyes</h4><p>District-wide &middot; Crisis Intervention</p></div><div class="cobg">Verified</div></div>
+<div class="coi"><div class="coav">AW</div><div class="coin"><h4>Ms. Aisha Williams</h4><p>Northside HS &middot; LGBTQ+ Support</p></div><div class="cobg">Verified</div></div>
+<p style="font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6">Counselors respond within school hours. For urgent help, always use the 988 crisis line.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mb" id="pmodal">
+<div class="mbx">
+<div class="mhd">
+<h2>Share Anonymously</h2>
+<button class="mcl" onclick="closeModal()">&times;</button>
+</div>
+<div class="an">You will post as a randomly generated anonymous name. No account needed.</div>
+<div class="fg4"><label class="fl">Title</label><input class="fi3" id="nt" type="text" placeholder="What's on your mind?"></div>
+<div class="fg4"><label class="fl">Tell us more (optional)</label><textarea class="fta2" id="nb" placeholder="Share as much or as little as you'd like..."></textarea></div>
+<div class="fg4">
+<label class="fl">Topic Tag</label>
+<div class="tpk">
+<button class="to" onclick="selectTag(this,'anxiety')">Anxiety</button>
+<button class="to" onclick="selectTag(this,'depression')">Depression</button>
+<button class="to" onclick="selectTag(this,'stress')">Stress</button>
+<button class="to" onclick="selectTag(this,'relationships')">Relationships</button>
+<button class="to" onclick="selectTag(this,'academic')">Academic</button>
+<button class="to" onclick="selectTag(this,'general')">General</button>
+<button class="to" onclick="selectTag(this,'crisis')">Crisis</button>
+</div>
+</div>
+<p style="font-size:12px;color:var(--muted);margin-bottom:14px">Bot protection active &mdash; your identity is never stored.</p>
+<div style="display:flex;gap:10px;justify-content:flex-end">
+<button class="bbk" onclick="closeModal()">Cancel</button>
+<button class="bs" style="width:auto;padding:11px 24px" onclick="submitPost()">Post Anonymously</button>
+</div>
+</div>
+</div>
+<footer>
+<strong>Kindly</strong> &mdash; Student Mental Health Resource Finder<br>
+  Not a crisis service. In emergencies, call/text <a href="tel:988">988</a> or text HOME to <a href="sms:741741">741741</a>.<br>
+<span style="opacity:.5;font-size:12px">Anonymous by design &middot; No data stored &middot; Built for students</span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
