@@ -225,27 +225,26 @@ body { font-family: 'Alice', serif; background: var(--sky); color: var(--text); 
 .bh2:hover { background: rgba(255,255,255,.28); transform: translateY(-2px); }
 
 .bh3 {
-  background: rgba(255, 102, 196, 0.18);
-  color: #fff;
-  border: 2px solid rgba(255, 102, 196, 0.75);
+  background: #fff;
+  color: var(--teal);
+  border: none;
   padding: 14px 32px;
   border-radius: 12px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all .2s;
   font-family: 'Alice', serif;
-  backdrop-filter: blur(4px);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 .bh3:hover {
-  background: rgba(255, 102, 196, 0.38);
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(255, 102, 196, 0.25);
+  box-shadow: 0 8px 28px rgba(0,0,0,.2);
 }
+
 /* HOME SECTIONS */
 .hsec { max-width: 1100px; margin: 52px auto; padding: 0 20px; }
 .eyebrow {
